@@ -7,7 +7,6 @@ namespace Exec2_Star
 			InitializeComponent();
 			label1.Text = string.Empty;
 		}
-
 		private void button1_Click(object sender, EventArgs e)
 		{
 			int? rows = checkint();
@@ -23,10 +22,6 @@ namespace Exec2_Star
 				MessageBox.Show("计ぃ眔0");
 				return;
 			}
-
-			//string stars = generatestar(rows.Value);
-			//textBox2.Text = stars;
-			//label2.Text = stars;
 			Display(generatestar(rows.Value));
 		}
 		private int? checkint()
@@ -68,49 +63,6 @@ namespace Exec2_Star
 			Success();
 			return result;
 		}
-		//private void button2_Click(object sender, EventArgs e)
-		//{
-		//	int? rows = checkint();
-
-		//	if (rows.HasValue == false)
-		//	{
-		//		MessageBox.Show("叫块计");
-		//		return;
-		//	}
-
-		//	if (rows.Value <= 0)
-		//	{
-		//		MessageBox.Show("计ぃ眔0");
-		//		return;
-		//	}
-
-		//	//string stars = generatestar2(rows.Value);
-		//	//textBox2.Text = stars;
-		//	//label2.Text = stars;
-		//	Display(generatestar2(rows.Value));
-		//}
-
-		private void button3_Click(object sender, EventArgs e)
-		{
-			int? rows = checkint();
-
-			if (rows.HasValue == false)
-			{
-				MessageBox.Show("叫块计");
-				return;
-			}
-
-			if (rows.Value <= 0)
-			{
-				MessageBox.Show("计ぃ眔0");
-				return;
-			}
-
-			//string stars = generatestar3(rows.Value);
-			//textBox2.Text = stars;
-			//label2.Text = stars;
-			Display(generatestar3(rows.Value));
-		}
 		private string Display(string star)
 		{
 			textBox2.Text = star;
@@ -136,10 +88,6 @@ namespace Exec2_Star
 				MessageBox.Show("计ぃ眔0");
 				return;
 			}
-
-			//string stars = generatestar2(rows.Value);
-			//textBox2.Text = stars;
-			//label2.Text = stars;
 			Display(generatestar2(rows.Value));
 		}
 
@@ -158,10 +106,6 @@ namespace Exec2_Star
 				MessageBox.Show("计ぃ眔0");
 				return;
 			}
-
-			//string stars = generatestar3(rows.Value);
-			//textBox2.Text = stars;
-			//label2.Text = stars;
 			Display(generatestar3(rows.Value));
 		}
 	}
